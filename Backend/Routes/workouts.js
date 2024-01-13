@@ -1,3 +1,4 @@
+//to use the express router we need to require express first.
 const express = require('express');
 
 // We use the express router to gain access to the express app in server.js

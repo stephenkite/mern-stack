@@ -6,7 +6,7 @@ require('dotenv').config();
 // creating the express application - it is found in the node modules folder
 const express = require('express');
 //require the router which was exported(inside workouts.js) containing all the different routes
-const workoutRoutes = require('./Routes/workouts');
+const workoutRoutes = require('./routes/workouts');
 
 // starting up the express app - it's been stored in this constant now
 const app = express();

@@ -14,5 +14,8 @@ Day 1
   10.(npm install dotenv) -> Package that loads environment variables from a .env file into a process.env object.
 
 Day 2:
-  1.Created workouts.js file -> to put the routes in it to help to avoid bloating out the server.js file.
-  2.
+  1.Created workouts.js file -> to put the routes in it to help to avoid bloating out the server.js file and export them
+    (use express router).
+  2.express.Router -> used to create an instance of the router
+  3.specified the path for which to use for the specified routes. -> /api/workouts.
+  4.express.json -> middleware used to check if a request contains data and attach the data to req object if it does.
