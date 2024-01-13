@@ -12,3 +12,7 @@ Day 1
   8.(npm run dev) -> To run the server.js file.
   9.Created the .env file -> This file will be used to store the environment variables eg: the PORT number.
   10.(npm install dotenv) -> Package that loads environment variables from a .env file into a process.env object.
+
+Day 2:
+  1.Created workouts.js file -> to put the routes in it to help to avoid bloating out the server.js file.
+  2.
