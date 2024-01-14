@@ -5,6 +5,8 @@ require('dotenv').config();
 
 // creating the express application - it is found in the node modules folder
 const express = require('express');
+// mongoose package helps us to connect to mongodb
+const mongoose = require('mongoose');
 //require the router which was exported(inside workouts.js) containing all the different routes
 const workoutRoutes = require('./routes/workouts');
 
@@ -25,7 +27,15 @@ app.use((req, res, next) => {
 // when we fire a request to this route here(which is cutom set) then use the specified routes(workoutRoutes)
 app.use('/api/workouts',workoutRoutes);
 
-// listen for requests - we put the port number in an evironment variable so that it can remain hidden when i push the code to eg: github
-app.listen(process.env.PORT, () => {
-  console.log(`listening on port ${process.env.PORT}`)
-});
+// connect to db
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+      // listen for requests - we put the port number in an evironment variable so that it can remain hidden when i push the code to eg: github
+      app.listen(process.env.PORT, () => {
+      console.log(`connected to db & listening on port ${process.env.PORT}`)
+    });
+  })
+  .catch((error) => {
+    console.log(error)
+  });
+  
