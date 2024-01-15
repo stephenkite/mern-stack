@@ -24,3 +24,7 @@
   1.Mongo db atlas -> allows us to spin up a fully configured database online.
   2.(npm install mongoose) -> an ODM(Object Data Modelling) library, wraps mongodb with an extra layer that allows us to use methods to read and write database docs and also to declare modules & schemas to ensure a more strict data structure.
   3.we don't want to start listening to requests before connecting to the database, so in server.js, move the fn for listening to requests inside the fn for connecting to the db using mongoose.
+
+
+  1.made a schema for how the workout data should look like and exported the module. The module is used to manipulate the collection.
+  2.updated the post request handler in workouts.js
