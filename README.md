@@ -28,3 +28,6 @@
 
   1.made a schema for how the workout data should look like and exported the module. The module is used to manipulate the collection.
   2.updated the post request handler in workouts.js
+
+  ## Day 4
+  1.created workoutController.js file for the controller fns(for each of the different routes) to avoid bloating out workout.js file(which is only for registering the different routes)
