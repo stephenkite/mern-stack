@@ -4,6 +4,8 @@ const {
   createWorkout,
   getWorkouts,
   getWorkout,
+  deleteWorkout,
+  updateWorkout
 } = require('../controllers/workoutController');
 
 // We use the express router to gain access to the express app in server.js
@@ -22,14 +24,10 @@ router.get('/:id', getWorkout);
 router.post('/', createWorkout);
 
 //To DELETE a workout.
-router.delete('/:id', (req, res) => {
-  res.json({mssg: 'DELETE a workout'})
-})
+router.delete('/:id', deleteWorkout);
 
 //To UPDATE a workout.
-router.patch('/:id', (req, res) => {
-  res.json({mssg: 'UPDATE a workout'})
-})
+router.patch('/:id',updateWorkout);
 
 //Exporting the router
 module.exports = router;

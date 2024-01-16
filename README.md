@@ -31,3 +31,6 @@
 
   ## Day 4
   1.created workoutController.js file for the controller fns(for each of the different routes) to avoid bloating out workout.js file(which is only for registering the different routes)
+
+  ## Day 5
+  2.Created two controller functions(for delete & update routes)
