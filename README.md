@@ -33,4 +33,9 @@
   1.created workoutController.js file for the controller fns(for each of the different routes) to avoid bloating out workout.js file(which is only for registering the different routes)
 
   ## Day 5
-  2.Created two controller functions(for delete & update routes)
+  1.Created two controller functions(for delete & update routes)
+
+  1.created a react app for the frontend
+  2.(npm install react-router-dom) -> so that we can add pages to the application.
+  3.created Home.js and Navbar.js components
+  

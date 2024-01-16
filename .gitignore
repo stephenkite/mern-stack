@@ -1,5 +1,10 @@
-#Files & Folders to ignore in he Backend folder
+#Files & Folders to ignore in the Backend folder
 node_modules/
 package-lock.json
 .env
-frontend/
+
+#Files & Folders to ignore in the frontend folder
+public/
+package.json
+README.md
+.gitignore
