@@ -39,3 +39,9 @@
   2.(npm install react-router-dom) -> so that we can add pages to the application.
   3.created Home.js and Navbar.js components
   
+  ## Day 6
+  1.useEffect hook - for fetching data from our server
+  2.dependency array - if it is empty the useEffect hook will only ever fire once
+  3.added a proxy field in the package.json file inside frontend - this property tells our react dev server to proxy any request that it doesn't recognise to our api server at this address. This actually removes the CORS error we get in the console.
+  4.created a workoutDetails.js component - this component is imported in Home.js and map() method is used to dispay the workouts styled as cards
+  

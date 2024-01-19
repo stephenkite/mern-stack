@@ -5,6 +5,5 @@ package-lock.json
 
 #Files & Folders to ignore in the frontend folder
 public/
-package.json
 README.md
 .gitignore
