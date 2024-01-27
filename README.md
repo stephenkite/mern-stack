@@ -45,3 +45,6 @@
   3.added a proxy field in the package.json file inside frontend - this property tells our react dev server to proxy any request that it doesn't recognise to our api server at this address. This actually removes the CORS error we get in the console.
   4.created a workoutDetails.js component - this component is imported in Home.js and map() method is used to dispay the workouts styled as cards
   
+  ## Day 7
+  1. created WorkoutForm.js component - it is imported in Home.js and will be used to add a new workout
+  
